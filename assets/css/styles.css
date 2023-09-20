@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    margin:0;
+    width: auto;
+    height: 200;
+}
+body {
+    background-image: url("../img/championsTunic.jpg");
+    background-repeat: no-repeat;
+}
+h1,h2 {background-color: #FC9804;
+    color: blueviolet;
+    font-family: 'Roboto', sans-serif;
+    font-style: oblique;
+    font-weight: 100;
+    }
