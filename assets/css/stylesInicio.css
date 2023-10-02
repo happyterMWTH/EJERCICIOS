@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    background-color: #312200;
+}
+.header{
+    background-color: #009ae6;
+    padding: 10px 10px 10px 10px;
+    border: 15px double #FFFFFF;
+    color: #FFFFFF;
+}
+.header h1{
+    color: #93e3ac;
+    font-family: "Roboto", sans-serif;
+    font-weight: bolder;
+    font-size: 50px;
+    text-align: center;
+}
+.header p{
+    color: #FFFFFF;
+    text-align: center;
+}
+.divider{
+    height: 10px;
+}
+.redirect{
+    background-color: #00ada5;
+    padding: 10px 10px 10px 10px;
+    border: 5px solid #FFFFFF;
+    color: #FFFFFF;
+}
+.redirect table{
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    border-width: 4px;
+    border-style: solid;
+    border-color: #ffffff;
+}
+.redirect table th{
+    background-color: #007d77;
+    padding: 10px 10px 10px 10px;
+    border-style: ridge;
+    border-color: #ffffff;
+}
+.redirect table td{
+    padding: 10px 10px 10px 10px;
+    border-style: ridge;
+    border-color: #ffffff;
+    text-align: center;
+}
+.redirect a:link{
+    color: #d8e84f;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+}
+.redirect a:visited{
+    color: #59f0e8;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+}
+.redirect a:hover{
+    color: #0053f9;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+}
