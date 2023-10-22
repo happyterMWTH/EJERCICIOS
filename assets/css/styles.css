@@ -1,3 +1,77 @@
-.navbar-brand{
-    color: #FF0000;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rye&display=swap');
+
+:root {
+    --totk-green: #4aba91;
+    --botw-blue: #38b6f1;
+    --oot-yellow-light: #FFE216;
+    --oot-yellow: #F3D812;
+    --oot-yellow-dark: #DEC513;
+    --oot-red: #CF1717;
+    --zelda-font: "Rye", sans-serif;
+  }
+@font-face {
+    font-family: sheikah;
+    src: url(/assets/fonts/BotW_Sheikah.ttf);
+}
+
+
+/* Barra de navegación */
+.navbar{
+    background-color: var(--oot-yellow);
+    font-family: var(--zelda-font);
+    
+}
+.navbar.navbar-expand-lg a{
+    
+    background-color: var(--oot-yellow-dark);
+    color: var(--oot-red);
+    border-radius: 20%;
+}
+.navbar.navbar-expand-lg a:hover{
+    background-color: var(--oot-yellow-light);
+    color: var(--oot-red);
+}
+.navbar.navbar-expand-lg img{
+    padding: 0px 30px 0px 30px;
+    height: 80px;
+}
+.btn.btn-outline-success{
+    color: red;
+}
+/* Header */
+
+.sheikah-header{
+    font-family: "sheikah", sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: var(--botw-blue);
+}
+.hylian-header{
+    font-family: var(--zelda-font);
+    font-size: 30px;
+    text-align: center;
+    color: black;
+}
+.description{
+    font-family: var(--zelda-font);
+    font-size: 10px;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;;
+    color: black;
+}
+
+/* Carrusel */
+.carousel.slide{
+    margin: 10px 100px 10px 100px;
+}
+.carousel.slide img{
+    display: block;
+    max-height: 900px;
+    height: auto;
+}
+.carousel.slide p{
+    text-align: center;
+    font-family: var(--zelda-font);
 }
