@@ -2,42 +2,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rye&display=swap');
 
 :root {
+    --dirt-bg: #524341;
     --totk-green: #4aba91;
     --botw-blue: #38b6f1;
+    --botw-gold: #FEF6C4;
     --oot-yellow-light: #FFE216;
     --oot-yellow: #F3D812;
     --oot-yellow-dark: #DEC513;
     --oot-red: #CF1717;
     --zelda-font: "Rye", sans-serif;
-  }
+}
 @font-face {
     font-family: sheikah;
     src: url(/assets/fonts/BotW_Sheikah.ttf);
 }
+@font-face {
+    font-family: hylian;
+    src: url(/assets/fonts/BotW_Hylian.ttf);
+}
+@font-face {
+    font-family: gerudo;
+    src: url(/assets/fonts/GerudoTypography.ttf);
+}
 
 
 /* Barra de navegación */
+
 .navbar{
     background-color: var(--oot-yellow);
     font-family: var(--zelda-font);
     
 }
 .navbar.navbar-expand-lg a{
-    
     background-color: var(--oot-yellow-dark);
+    font-family: var(--zelda-font);
     color: var(--oot-red);
     border-radius: 20%;
 }
 .navbar.navbar-expand-lg a:hover{
     background-color: var(--oot-yellow-light);
-    color: var(--oot-red);
+    font-family: "sheikah", sans-serif;
+    color: var(--botw-blue);
+}
+.navbar.navbar-expand-lg img:hover{
+    filter: invert(100%);
 }
 .navbar.navbar-expand-lg img{
     padding: 0px 30px 0px 30px;
     height: 80px;
 }
 .btn.btn-outline-success{
-    color: red;
+    border-color: var(--oot-yellow-dark);
+    background-color: var(--oot-yellow-dark);
+    color: black;
+}
+.btn.btn-outline-success:hover{
+    border-color: var(--oot-red);
+    background-color: var(--oot-red);
+    color: white;
 }
 /* Header */
 
@@ -48,6 +70,19 @@
     color: var(--botw-blue);
 }
 .hylian-header{
+    background-color: var(--oot-yellow-dark);
+    font-family: "hylian", sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: var(--oot-red);
+}
+.hylian-header h1:hover{
+    font-family: var(--zelda-font);
+    font-size: 40px;
+    text-align: center;
+    color: var(--oot-red);
+}
+.latin-header{
     font-family: var(--zelda-font);
     font-size: 30px;
     text-align: center;
@@ -55,10 +90,12 @@
 }
 .description{
     font-family: var(--zelda-font);
-    font-size: 10px;
+    font-size: 20px;
     text-align: center;
     margin-left: 10%;
-    margin-right: 10%;;
+    margin-right: 10%;
+    margin-top: 50px;
+    margin-bottom: 50px;
     color: black;
 }
 
@@ -74,4 +111,67 @@
 .carousel.slide p{
     text-align: center;
     font-family: var(--zelda-font);
+}
+
+/* Pestañas */
+.nav-tabs{
+    background-color: var(--oot-yellow-dark);
+}
+.nav-tabs.nav-link.active{
+    background-color: red;
+}
+
+.char{
+    background-color: var(--dirt-bg);
+    display: flex;
+}
+.char img{
+    max-height: 500px;
+    border: 15px solid var(--totk-green);
+}
+/* Zelda */
+.zelda-description h1{
+    color: var(--botw-blue);
+    padding: 20px 10% 10px 10%;
+    font-family: "sheikah", sans-serif;
+}
+.zelda-description h1:hover{
+    color: var(--botw-gold);
+    font-family: "Rye", sans-serif;
+}
+.zelda-description p{
+    color: white;
+    padding: 50px 10% 30% 10%;
+    font-family: "Rye", sans-serif;
+}
+/* Link */
+.link-description h1{
+    color: var(--totk-green);
+    padding: 20px 10% 10px 10%;
+    font-family: "hylian", sans-serif;
+}
+.link-description h1:hover{
+    color: var(--botw-gold);
+    font-family: "Rye", sans-serif;
+}
+.link-description p{
+    color: white;
+    padding: 50px 10% 30% 10%;
+    font-family: "Rye", sans-serif;
+}
+
+/* Ganondorf */
+.ganon-description h1{
+    color: red;
+    padding: 20px 10% 10px 10%;
+    font-family: "gerudo", sans-serif;
+}
+.ganon-description h1:hover{
+    color: var(--botw-gold);
+    font-family: "Rye", sans-serif;
+}
+.ganon-description p{
+    color: white;
+    padding: 50px 10% 30% 10%;
+    font-family: "Rye", sans-serif;
 }
