@@ -14,15 +14,15 @@
 }
 @font-face {
     font-family: sheikah;
-    src: url(/assets/fonts/BotW_Sheikah.ttf);
+    src: url("../fonts/BotW_Sheikah.ttf");
 }
 @font-face {
     font-family: hylian;
-    src: url(/assets/fonts/BotW_Hylian.ttf);
+    src: url("../fonts/BotW_Hylian.ttf");
 }
 @font-face {
     font-family: gerudo;
-    src: url(/assets/fonts/GerudoTypography.ttf);
+    src: url("../fonts/GerudoTypography.ttf");
 }
 
 
